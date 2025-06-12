@@ -74,5 +74,42 @@ mdr-4/
 ```
 
 
+## Setup
+
+### Prerequisites
+Node.js v18+, Python 3.10+, Firebase CLI
+
+
+### Installation
+
+1. Clone the repo:
+```bash
+git clone https://github.com/your-repo/mdr-4.git  
+cd mdr-4  
+```
+
+2. Set up frontend:
+```bash
+cd app  
+npm install  
+cp .env.example .env  # Add Expo/Firebase keys  
+```
+
+3. Run backend:
+```bash
+cd ../backend  
+npm install  
+node server.js  
+```
+
+4. AI service (optional):
+```bash
+cd ../ai  
+pip install -r requirements.txt  
+uvicorn api:app --reload  
+```
+
+
+
 
 

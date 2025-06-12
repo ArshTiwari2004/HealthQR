@@ -148,6 +148,47 @@ uvicorn api:app --reload
 ```
 
 
+## API Reference
+
+
+### QR Generation
+
+POST /api/qr/generate
+
+Request:
+```bash
+{ "patient_id": "123", "ehr_data": { ... } }  
+```
+Response:
+```bash
+{ "qr_code": "base45_encoded_string", "expiry": "2025-12-31" }  
+```
+
+
+### Clinic Scan
+
+GET /api/qr/scan?token=<QR_DATA>
+
+Response:
+
+```bash
+{  
+  "allergies": ["Penicillin"],  
+  "last_visit": "2025-05-20",  
+  "chronic_conditions": ["Type 2 Diabetes"]  
+}  
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 

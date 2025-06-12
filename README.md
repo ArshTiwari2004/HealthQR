@@ -153,7 +153,8 @@ uvicorn api:app --reload
 
 ### QR Generation
 
-POST /api/qr/generate
+
+#### `POST /api/qr/generate`
 
 Request:
 ```bash
@@ -167,7 +168,7 @@ Response:
 
 ### Clinic Scan
 
-GET /api/qr/scan?token=<QR_DATA>
+#### `GET /api/qr/scan?token=<QR_DATA>`
 
 Response:
 
